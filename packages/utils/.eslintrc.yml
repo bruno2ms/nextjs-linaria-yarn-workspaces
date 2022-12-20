@@ -1,0 +1,28 @@
+parser: "@typescript-eslint/parser"
+env:
+  node: true
+  browser: true
+  jest: true
+  es6: true
+plugins:
+  - react-hooks
+extends:
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:jsx-a11y/recommended
+  - prettier
+  - prettier/@typescript-eslint
+rules:
+  "react-hooks/rules-of-hooks": 2                           # hooks
+  "react-hooks/exhaustive-deps": 2                          # hooks
+  "@typescript-eslint/no-unused-vars": 2                    # upgrade from default warn
+  "@typescript-eslint/prefer-interface": 0                  # preference
+  "@typescript-eslint/array-type": 0                        # preference
+  "@typescript-eslint/explicit-member-accessibility": 0     # preference (verbosity)
+  "@typescript-eslint/no-explicit-any": 0                   # preference (conveinence)
+  "@typescript-eslint/no-use-before-define": 0              # preference
+  "@typescript-eslint/explicit-function-return-type": 0     # preference (verbosity with react, also inference is useful part of TS)
+  "@typescript-eslint/ban-ts-ignore": 0                     # preference
+  "prefer-const": 0                                         # preference
+  "@typescript-eslint/camelcase": 0                         # sometimes backend uses snake

@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "0.0.0",
+  "description": "Monorepo for Next + Linaria",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "typecheck": "yarn workspaces run typecheck",
+    "dev": "yarn workspace @project/web dev"
+  },
+  "prettier": {},
+  "eslintIgnore": [
+    "/node_modules",
+    "/build",
+    "/public/build"
+  ],
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}

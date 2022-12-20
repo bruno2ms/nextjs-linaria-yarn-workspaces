@@ -1,0 +1,9 @@
+{
+  "name": "@project/utils",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "typecheck": "tsc"
+  },
+  "devDependencies": {}
+}
